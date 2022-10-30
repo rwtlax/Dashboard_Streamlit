@@ -1,7 +1,7 @@
 from operator import truediv
 import streamlit as st
 import pandas as pd
-import plotly as plt
+##import plotly as plt
 import plotly.express as px
 
 st.title("Supermaket Grocery sales")
