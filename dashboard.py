@@ -60,7 +60,7 @@ select= st.sidebar.selectbox('Sales by Category Visualization',['Bar Graph','Pi 
 
 st.markdown('### Sales by Category')
 if select=='Bar Graph':
-	fig=px.bar(city_sales, x='Category',y='Sales',color='Sales',height=500, text_auto = True)
+	fig=px.bar(city_sales, x='Category',y='Sales',color='Sales',height=500, text_auto = '.2f')
 	st.plotly_chart(fig)
 
 else:
