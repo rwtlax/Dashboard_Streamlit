@@ -72,5 +72,6 @@ st.dataframe(city_df)
 
 st.markdown('### Monthly Sales at Every Month')
 fig2 = px.area(year_sales_df, x='Month', y='Sales',color='Year', line_group='Year')
+fig2.update_xaxes(categoryorder='array', categoryarray= ['January','February','March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
 st.plotly_chart(fig2)
 
